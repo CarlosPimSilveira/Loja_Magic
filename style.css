@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #233559;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .top > * {
+    margin: 0 10px;
+  }  
+  
+  .top1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .top1 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+  }
+  
+  .top1 li {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: var(--cor0);
+  }
+  
+  .dropdown > a {
+    display: inline-block;
+  }
+  
+  .top1 {
+    background-color: var(--cor0);
+  }
+  
+ .top1 li:hover {
+    background-color: #4072d4;
+  }
+  
+  header {
+    background-color: var(--cor0);
+  }
+
+  main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor0);
+  }
+  
+  .bloco1,
+  .bloco2,
+  .bloco3 {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bloco1 li,
+  .bloco2 p,
+  .bloco3 p {
+    margin: 10px 0;
+  }  
+  
+  @media only screen and (max-width: 768px) {
+    .bloco1,
+    .bloco2,
+    .bloco3 {
+      flex-basis: 100%;
+    }
+  }
+  
+  /*
+  @media only screen and (max-width: 768px) {
+    .bloco1, .bloco2, .bloco3 {
+      flex-basis: 100%;
+    }
+  }
+  */
+  
